@@ -7,7 +7,7 @@ body {
     background-color: rgb(199, 189, 197);
 }
 
-main {
+div#inteface {
     background-color: rgb(180, 123, 123);
     width: 500px;
     margin: auto;
