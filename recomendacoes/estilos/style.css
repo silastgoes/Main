@@ -19,6 +19,7 @@ header#cabecalho {
 header#cabecalho h1 {
     font-family: 'Lobster', cursive;
     font-size: 40pt;
+    text-align: center;
 }
 
 
@@ -46,17 +47,22 @@ div.prateleira h2 {
     color: rgba(255, 254, 255, 0.8);
     background-color: #888888;
     text-shadow: 1px 1px black;
+    font-family: 'Pacifico', cursive;
 }
 
 div.prateleira p {
     font-size: 13pt;
     color: black;
+    padding: 5px;
+    text-indent: 15px;
+    text-align: justify;
 }
 
 div.prateleira p a {
     font-size: 13pt;
     color: black;
     text-decoration: none;
+    font-weight: bolder;
 }
 
 
@@ -67,9 +73,23 @@ section#corpo img.logo {
     width: 150px;
     border: 1px solid white;
     box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.473);
+    margin-left: 10px;
 }
 
 section#corpo h1 {
-    font-size: 20pt;
+    font-size: 30pt;
     font-family: 'Mukta Vaani', sans-serif;
+    margin-left: 20px;
+}
+
+
+/*Rodapé*/
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid black;
+}
+
+footer#rodape p {
+    text-align: center;
 }
