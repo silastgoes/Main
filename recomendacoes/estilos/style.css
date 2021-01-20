@@ -31,3 +31,13 @@ div#main {
     padding: 10px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.473);
 }
+
+
+/*Seção*/
+
+section#corpo img.logo {
+    float: right;
+    width: 150px;
+    border: 1px solid white;
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.473);
+}
