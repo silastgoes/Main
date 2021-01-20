@@ -48,6 +48,17 @@ div.prateleira h2 {
     text-shadow: 1px 1px black;
 }
 
+div.prateleira p {
+    font-size: 13pt;
+    color: black;
+}
+
+div.prateleira p a {
+    font-size: 13pt;
+    color: black;
+    text-decoration: none;
+}
+
 
 /*Seção*/
 
