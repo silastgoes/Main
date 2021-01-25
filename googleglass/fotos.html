@@ -1,29 +1,51 @@
-Google Glass
-A revolução do Google está chegando
+<!DOCTYPE html>
+<html lang="pt-br">
 
-[AQUI ENTRA UMA FOTO]
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css">
+    <title>Tudo sobre Google Glass</title>
+</head>
 
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
+<script>
+    function mudaFoto(foto) {
+        document.getElementById("icone").src = "_imagens/" + foto + ".png";
+    }
+</script>
 
-Glass > Fotos
-Galeria de Imagens do Google Glass
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+<body>
+    <div class="interface">
+        <header class="cabecalho">
+            <hgroup>
+                <h1>Google Glass</h1>
+                <h2>A revolução do Google está chegando</h2>
+            </hgroup>
+            <img id="icone" src="_imagens/fotos.png">
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ol type="I">
+                    <li onmouseover="mudaFoto('home')" onmouseout="mudaFoto('fotos')">
+                        <a href="index.html ">Home</a></li>
+                    <li onmouseover="mudaFoto('especificacoes')" onmouseout="mudaFoto('fotos')">
+                        <a href="specs.html ">Especificações</a></li>
+                    <li onmouseover="mudaFoto('fotos')" onmouseout="mudaFoto('fotos')">
+                        <a href="fotos.html ">Fotos</a></li>
+                    <li onmouseover="mudaFoto('multimidia')" onmouseout="mudaFoto('fotos')">
+                        <a href="multimidia.html ">Multimídia</a></li>
+                    <li onmouseover="mudaFoto('contato')" onmouseout="mudaFoto('fotos')">
+                        <a href="fale-conosco.html ">Fale conosco</a></li>
+                </ol>
+            </nav>
+        </header>
+        que estão impressionando o mundo inteiro. Basta passar o mouse sobre uma das fotos para ver uma versão ampliada e com uma breve descrição. - Agenda e lembretes - Sergey Brin usando o Glass - Leve e compacto - Sensação de uma tela de 50" - Vários tipos
+        de lente - Informações importantes
 
-Veja na nossa galeria de fotos várias belas imagens que mostram algumas das principais características do Google Glass, como recursos e propriedades que estão impressionando o mundo inteiro. Basta passar o mouse sobre uma das fotos para ver uma versão ampliada e com uma breve descrição.
+        <footer class="rodape ">
+            <p> &copy Copyright 2013 - by Gustavo Guanabara
+                <br/> Facebook | Twitter</p>
+        </footer>
+    </div>
+</body>
 
-- Agenda e lembretes
-- Sergey Brin usando o Glass
-- Leve e compacto
-- Sensação de uma tela de 50"
-- Vários tipos de lente
-- Informações importantes
-
-Copyright 2013 - by Gustavo Guanabara
-
-Facebook | Twitter
+</html>

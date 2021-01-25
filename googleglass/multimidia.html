@@ -1,25 +1,50 @@
-Google Glass
-A revolução do Google está chegando
+<!DOCTYPE html>
+<html lang="pt-br">
 
-[AQUI ENTRA UMA FOTO]
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css">
+    <title>Tudo sobre Google Glass</title>
+</head>
 
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
+<script>
+    function mudaFoto(foto) {
+        document.getElementById("icone").src = "_imagens/" + foto + ".png";
+    }
+</script>
 
-Glass > Multimídia
-Sons e Vídeos
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+<body>
+    <div class="interface">
+        <header class="cabecalho">
+            <hgroup>
+                <h1>Google Glass</h1>
+                <h2>A revolução do Google está chegando</h2>
+            </hgroup>
+            <img id="icone" src="_imagens/multimidia.png">
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ol type="I">
+                    <li onmouseover="mudaFoto('home')" onmouseout="mudaFoto('multimidia')">
+                        <a href="index.html ">Home</a></li>
+                    <li onmouseover="mudaFoto('especificacoes')" onmouseout="mudaFoto('multimidia')">
+                        <a href="specs.html ">Especificações</a></li>
+                    <li onmouseover="mudaFoto('fotos')" onmouseout="mudaFoto('multimidia')">
+                        <a href="fotos.html ">Fotos</a></li>
+                    <li onmouseover="mudaFoto('multimidia')" onmouseout="mudaFoto('multimidia')">
+                        <a href="multimidia.html ">Multimídia</a></li>
+                    <li onmouseover="mudaFoto('contato')" onmouseout="mudaFoto('multimidia')">
+                        <a href="fale-conosco.html ">Fale conosco</a></li>
+                </ol>
+            </nav>
+        </header>
+        Sons e Vídeos por Gustavo Guanabara Atualizado em 01/Maio/2013 Áudio e Vídeo [AQUI ENTRA UM VÍDEO] [AQUI ENTRA UM ÁUDIO]
 
+        <footer class="rodape ">
+            <p> &copy Copyright 2013 - by Gustavo Guanabara
+                <br/> Facebook | Twitter</p>
+        </footer>
+    </div>
+</body>
 
-Áudio e Vídeo
-
-[AQUI ENTRA UM VÍDEO]
-[AQUI ENTRA UM ÁUDIO]
-
-Copyright 2013 - by Gustavo Guanabara
-Facebook | Twitter
+</html>
