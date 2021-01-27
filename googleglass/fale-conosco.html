@@ -5,12 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="_css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="_css/form.css">
+
     <title>Tudo sobre Google Glass</title>
 </head>
 
 <script>
     function mudaFoto(foto) {
         document.getElementById("icone").src = "_imagens/" + foto + ".png";
+    }
+
+    function calc_total() {
+        var qtd = parseInt(document.getElementById('cQtd').value);
+        tot = qtd * 1500;
+        document.getElementById('cTot').value = tot;
     }
 </script>
 
@@ -48,66 +56,135 @@
                         <h3 class="direita"> Atualizado em 23/Abril/2013 </h3>
                     </hgoup>
                 </header>
-                <form action="">
+                <form method="POST" id="fContato" action="" oninput="calc_total();">
                     <fieldset id="usuario">
                         <legend>Identificação do Usuário</legend>
                         <p>
-                            Nome:
+                            <label for="cNome">Nome:</label>
+                            <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nove Completo" />
                         </p>
                         <p>
-                            Senha:
+                            <label for="cSenha">Senha:</label>
+                            <input type="password" name="tSenha" id="cSenha" size="10" maxlength="8" placeholder="8 dígitos" />
                         </p>
-                        <p>
-                            E-mail:
+                        <p> <label for="cMail">E-mail:</label>
+                            <input type="email" name="tMail" id="cMail" size="30" maxlength="50" placeholder="Seu email" />
                         </p>
+                        <fieldset id="sexo">
+                            <legend>Sexo</legend>
+                            <input type="radio" name="tsexo" id="cMasc"><label for="cMasc">Masculino </label> <br>
+                            <input type="radio" name="tsexo" id="cFem"><label for="cFem"> Feminino </label> <br>
+                            <input type="radio" name="tsexo" id="cOut"><label for="cOut"> Outro</label>
+                        </fieldset>
                         <p>
-                            Sexo:
-                        </p>
-                        - Masculino - Feminino
-                        <p>
-                            Data de Nascimento:
+                            <label for="cNasc"> Data de Nascimento:</label>
+                            <input type="date" name="tNasc" id="cNasc" />
                         </p>
                     </fieldset>
                     <fieldset id="endereco">
                         <legend>Endereço do Usuário</legend>
                         <p>
-                            Logradouro:
+                            <label for="cRua">Logradouro: </label>
+                            <input type="text" name="tRua" id="cRua" size="13" maxlength="90">
                         </p>
                         <p>
-                            Número:
+                            <label for="cNum">Número:</label>
+                            <input type="number" name="tNum" id="cNum" min="1" max="9999">
                         </p>
                         <p>
-                            Estado:
+                            <label for="cEst"> Estado:</label>
+                            <select name="tEst" id="cEst">
+                                <option value="AC">AC</option>
+                                <option value="AL">AL</option>
+                                <option value="AP">AP</option> 
+                                <option value="AM">AM</option>
+                                <option value="BA">BA</option>
+                                <option value="CE">CE</option> 
+                                <option value="DF">DF</option>
+                                <option value="ES">ES</option>
+                                <option value="GO">GO</option>
+                                <option value="MA">MA</option>
+                                <option value="MT">MT</option>
+                                <option value="MS">MS</option>
+                                <option value="MG">MG</option>
+                                <option value="PA">PA</option>
+                                <option value="PB">PB</option>
+                                <option value="PR">PR</option>
+                                <option value="PE">PE</option>
+                                <option value="PI">PI</option> 
+                                <option value="RN">RN</option>
+                                <option value="RJ">RJ</option>
+                                <option value="RO">RO</option>
+                                <option value="RR">RR</option>
+                                <option value="SC">SC</option>
+                                <option value="SP">SP</option>
+                                <option value="SE">SE</option>
+                                <option value="TO">TO</option>
+                            </select>
                         </p>
                         <p>
-                            Cidade:
+                            <label for="cCid">Cidade:</label>
+                            <select name="tCid" id="cCid">
+                                <option value="AC">AC</option>
+                                <option value="AL">AL</option>
+                                <option value="AP">AP</option> 
+                                <option value="AM">AM</option>
+                                <option value="BA">BA</option>
+                                <option value="CE">CE</option> 
+                                <option value="DF">DF</option>
+                                <option value="ES">ES</option>
+                                <option value="GO">GO</option>
+                                <option value="MA">MA</option>
+                                <option value="MT">MT</option>
+                                <option value="MS">MS</option>
+                                <option value="MG">MG</option>
+                                <option value="PA">PA</option>
+                                <option value="PB">PB</option>
+                                <option value="PR">PR</option>
+                                <option value="PE">PE</option>
+                                <option value="PI">PI</option> 
+                                <option value="RN">RN</option>
+                                <option value="RJ">RJ</option>
+                                <option value="RO">RO</option>
+                                <option value="RR">RR</option>
+                                <option value="SC">SC</option>
+                                <option value="SP">SP</option>
+                                <option value="SE">SE</option>
+                                <option value="TO">TO</option>
+                            </select>
                         </p>
                     </fieldset>
                     <fieldset id="mensagem">
                         <legend>Mensagem do Usuário</legend>
                         <p>
-                            Grau de Urgência:
+                            <label for="cGrau">Grau de Urgência:</label> Min
+                            <input type="range" name="tgrau" id="cGrau"> Max
                         </p>
                         <p>
-                            Mensagem:
+                            <label for="cMsg">Mensagem:</label>
+                            <textarea name="tMsg" id="cMsg"></textarea>
                         </p>
                     </fieldset>
                     <fieldset id="pedido">
                         <legend>Quero um Google Glass</legend>
                         <p>
-                            Gostaria de adquirir um Google Glass quando disponível
+                            <input type="checkbox" name="tPed" id="cPed" checked>
+                            <label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label>
                         </p>
                         <p>
-                            Cor:
+                            <label for="cCor">Cor:</label>
+                            <input type="color" name="tCor" id="cCor" value="#cecece">
                         </p>
                         <p>
-                            Quantidade:
+                            <label for="cQtd">Quantidade:</label>
+                            <input type="number" name="tQtd" id="cQtd" min="1" max="5">
                         </p>
                         <p>
-                            Preço Total: R$
+                            <label for="cTot">Preço Total: R$</label>
+                            <input type="text" name="tTot" id="cTot" readonly>
                         </p>
                     </fieldset>
-                    [BOTÃO ENVIAR]
+                    <input type="submit" name="" id="" value="enviar">
                 </form>
 
         </section>
