@@ -63,7 +63,7 @@ header.cabecalho h2 {
 
 header.cabecalho img#icone {
     position: absolute;
-    left: 780px;
+    left: 1270px;
     top: 75px;
 }
 
@@ -88,7 +88,7 @@ nav#menu ol {
     list-style: none;
     text-transform: uppercase;
     top: -20px;
-    right: 10px;
+    left: 800px;
 }
 
 nav#menu li {
@@ -263,4 +263,19 @@ header#cabartigo h3 {
 
 .direita {
     text-align: right;
+}
+
+
+/*Video*/
+
+video#filme1 {
+    margin: 5px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    margin-bottom: 25px;
+}
+
+video#filme2 {
+    width: 350px;
+    margin: auto;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
