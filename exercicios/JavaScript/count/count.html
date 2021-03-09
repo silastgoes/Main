@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Count</title>
+
+</head>
+
+<body>
+
+    <header id="ageHeader">
+        <h1>Count</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                <label for="txt-start">Start:</label>
+                <input type="number" name="txt-start" id="txt-start" min="0"> <br>
+                <label for="txt-stop">Stop:</label>
+                <input type="number" name="txt-stop" id="txt-stop"> <br>
+                <label for="txt-spep">Step:</label>
+                <input type="number" name="txt-step" id="txt-step">
+            </p>
+            <p>
+
+            </p>
+            <p>
+                <input type="button" value="Count" onclick="count()">
+            </p>
+        </div>
+        <div>
+            <p id="res"> Prepare count...</p>
+        </div>
+    </section>
+    <footer>
+        <p>Silas T. Goes</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
